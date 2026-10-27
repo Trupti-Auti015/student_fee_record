@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Fee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<p class="menu">
+    <a href="/">Add Fee</a> |
+    <a href="/fee">View Fees</a> |
+    <a href="/update">Update</a> |
+    <a href="/delete">Delete</a>
+</p>
+
+    <h2>Add Student Fee Record</h2>
+
+<form method="POST">
+    Student Name:
+    <input type="text" name="Student_Name" required>
+    <br><br>
+
+    Course:
+    <select name="Course" required>
+        <option value="BSc IT">BSc IT</option>
+        <option value="BSc CS">BSc CS</option>
+        <option value="BCom">BCom</option>
+        <option value="BMS">BMS</option>
+        <option value="BA">BA</option>
+    </select>
+    <br><br>
+
+    Amount Paid:
+    <input type="number" name="Amount_Paid" step="0.01" min="1" required>
+    <br><br>
+
+    <input type="submit" value="Add Fee Record">
+</form>
+
+</body>
+</html>

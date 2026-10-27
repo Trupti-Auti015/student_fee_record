@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Records</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<p class="menu">
+    <a href="/">Add Fee</a> |
+    <a href="/fee">View Fees</a> |
+    <a href="/update">Update</a> |
+    <a href="/delete">Delete</a>
+</p>
+
+    <h2>Student Fee Records</h2>
+
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Fee ID</th>
+        <th>Student Name</th>
+        <th>Course</th>
+        <th>Amount Paid</th>
+    </tr>
+
+    {% for f in fees %}
+    <tr>
+        <td>{{ f[0] }}</td>
+        <td>{{ f[1] }}</td>
+        <td>{{ f[2] }}</td>
+        <td>{{ f[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h3>Total Fees Collected: {{ total }}</h3>
+
+</body>
+</html>

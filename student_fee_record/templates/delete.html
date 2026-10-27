@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Fee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<p class="menu">
+    <a href="/">Add Fee</a> |
+    <a href="/fee">View Fees</a> |
+    <a href="/update">Update</a> |
+    <a href="/delete">Delete</a>
+</p>
+
+    <h3>Delete Fee Record</h3>
+
+<form action="/delete" method="POST">
+    Fee ID:
+    <input type="number" name="Fee_ID" min="1" required>
+    <br><br>
+
+    <input type="submit" value="Delete Fee Record">
+</form>
+
+</body>
+</html>

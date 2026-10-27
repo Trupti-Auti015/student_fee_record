@@ -1,0 +1,90 @@
+/* Simple stylesheet for Temple Donation project */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8ee;
+    color: #333;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2, h3 {
+    color: #b34700;
+    border-bottom: 2px solid #ff9933;
+    padding-bottom: 8px;
+}
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #f0d9b5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #ff9933;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e67e00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #ff9933;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #f0d9b5;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #f0d9b5;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #fff3e0;
+}
+
+a {
+    color: #b34700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    background-color: #ffe0b2;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
